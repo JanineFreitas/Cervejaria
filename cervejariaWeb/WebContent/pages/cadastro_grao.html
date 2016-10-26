@@ -9,12 +9,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<!-- Inserção do JavaScript para validação dos campos -->
-
-<script type="text/javascript" src="js/validar.js"></script>
-
-
-<title>SoftBeer - Cadastro de Empresas</title>
+<title>SoftBeer - Cadastro de Grãos</title>
 
 <!-- Bootstrap Core CSS -->
 <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -39,7 +34,6 @@
 </head>
 
 <body>
-
 	<div id="wrapper">
 
 		<!-- Navigation -->
@@ -52,7 +46,9 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html">SoftBeer</a>
+				<a class="navbar-brand" href="index.html">SoftBeer</a> <img
+					src="../imagens/Beer_icon-icons.com_68783.png" width="50px"
+					height="50px" align="right">
 			</div>
 			<!-- /.navbar-header -->
 
@@ -235,111 +231,236 @@
 
 			<div class="navbar-default sidebar" role="navigation">
 				<div class="sidebar-nav navbar-collapse">
-					<ul class="nav" id="side-menu">
-						<li class="sidebar-search">
-							<div class="input-group custom-search-form">
-								<input type="text" class="form-control" placeholder="Search...">
-								<span class="input-group-btn">
-									<button class="btn btn-default" type="button">
-										<i class="fa fa-search"></i>
-									</button>
-								</span>
-							</div> <!-- /input-group -->
-						</li>
-						<li><a href="index.html"><i class="fa fa-dashboard fa-fw"></i>
-								Dashboard</a></li>
-						<li><a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>
-								Charts<span class="fa arrow"></span></a>
-							<ul class="nav nav-second-level">
-								<li><a href="flot.html">Flot Charts</a></li>
-								<li><a href="morris.html">Morris.js Charts</a></li>
-							</ul> <!-- /.nav-second-level --></li>
-						<li><a href="tables.html"><i class="fa fa-table fa-fw"></i>
-								Tables</a></li>
-						<li><a href="forms.html"><i class="fa fa-edit fa-fw"></i>
-								Forms</a></li>
-						<li><a href="#"><i class="fa fa-wrench fa-fw"></i> UI
-								Elements<span class="fa arrow"></span></a>
-							<ul class="nav nav-second-level">
-								<li><a href="panels-wells.html">Panels and Wells</a></li>
-								<li><a href="buttons.html">Buttons</a></li>
-								<li><a href="notifications.html">Notifications</a></li>
-								<li><a href="typography.html">Typography</a></li>
-								<li><a href="icons.html"> Icons</a></li>
-								<li><a href="grid.html">Grid</a></li>
-							</ul> <!-- /.nav-second-level --></li>
-						<li><a href="#"><i class="fa fa-sitemap fa-fw"></i>
-								Multi-Level Dropdown<span class="fa arrow"></span></a>
-							<ul class="nav nav-second-level">
-								<li><a href="#">Second Level Item</a></li>
-								<li><a href="#">Second Level Item</a></li>
-								<li><a href="#">Third Level <span class="fa arrow"></span></a>
-									<ul class="nav nav-third-level">
-										<li><a href="#">Third Level Item</a></li>
-										<li><a href="#">Third Level Item</a></li>
-										<li><a href="#">Third Level Item</a></li>
-										<li><a href="#">Third Level Item</a></li>
-									</ul> <!-- /.nav-third-level --></li>
-							</ul> <!-- /.nav-second-level --></li>
-						<li class="active"><a href="#"><i
-								class="fa fa-files-o fa-fw"></i> Sample Pages<span
-								class="fa arrow"></span></a>
-							<ul class="nav nav-second-level">
-								<li><a class="active" href="blank.html">Blank Page</a></li>
-								<li><a href="login.html">Login Page</a></li>
-							</ul> <!-- /.nav-second-level --></li>
-					</ul>
+					<iframe
+						style="height: 455px; width: 250px; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; padding-left: 15px; padding-bottom: 15px; padding-right: 15px; padding-top: 15px;"
+						src="menu.html"></iframe>
 				</div>
 				<!-- /.sidebar-collapse -->
 			</div>
 			<!-- /.navbar-static-side -->
 		</nav>
 
-		<!-- Page Content -->
 		<div id="page-wrapper">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-12">
-						<h1 class="page-header">Cadastro de Empresas</h1>
+
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="page-header">Malte</h1>
+					<h4>Adicionar um novo grão, extrato ou açucar</h4>
+				</div>
+
+				<form role="form">
+					<div class="form-group">
+						<label>Nome</label> <input class="form-control"
+							placeholder="Malte">
 					</div>
 
-					<!-- Campos para Cadastro das Empresas -->
+					<div class="form-group">
+						<label>Origem</label> <input class="form-control" placeholder="">
+					</div>
 
-					<form role="form" name="form1">
+					<div class="form-group">
+						<label>Fabricante</label> <input class="form-control"
+							placeholder="">
+					</div>
 
-						<div class="form-group">
-							<label>Razão Social / Nome Fantasia</label> <input
-								class="form-control" placeholder="Digite aqui">
-						</div>
+					<div class="form-group">
+						<label>Tipo</label> <select class="form-control">
+							<option>Grão</option>
+							<option>Extrato</option>
+							<option>Açucar</option>
+						</select>
+				</form>
 
-						<div class="form-group">
-							<label>CNPJ</label> <input type="text" name="cnpj" onkeypress="MascaraCNPJ(form1.cnpj);" maxlength="18" onblur="ValidarCNPJ(form1.cnpj);" class="form-control"
-								placeholder="Digite aqui">
-						</div>
 
-						<div class="form-group">
-							<label>I.E.</label> <input class="form-control"
-								placeholder="Digite aqui">
-						</div>
 
-						<div class="form-group">
-							<label>Endereço</label> <input class="form-control"
-								placeholder="Digite aqui">
-						</div>
-
-						<div class="form-group">
-							<button type="submit" class="btn btn-default btn-primary">Cadastrar</button>
-							<button type="reset" class="btn btn-default btn-primary">Limpar</button>
-
-						</div>
-					</form>
-					<!-- /.col-lg-12 -->
-				</div>
-				<!-- /.row -->
+				<!-- /.col-lg-12 -->
 			</div>
-			<!-- /.container-fluid -->
+			<!-- /.row -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="panel panel-default">
+						<!-- <div class="panel-heading">Grão, Extrato ou Malte</div> -->
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-lg-6">
+									<form role="form">
+										<!-- <div class="form-group">
+											<label>Nome</label> <input class="form-control"
+												placeholder="Água">
+										</div> -->
+										<br />
+
+										<div class="form-group">
+											<p class="text-center">
+												<label>Quantidade</label>
+											</p>
+										</div>
+										<hr>
+
+										<div class="form-group">
+											<label>Inventário (lb)</label> <input class="form-control"
+												placeholder="0,00">
+										</div>
+										<div class="form-group">
+											<label>Preço (R$/lb)</label> <input class="form-control"
+												placeholder="24,00">
+										</div>
+										<div class="form-group">
+											<label>Máx. no lote (%)</label> <input class="form-control"
+												placeholder="100,00">
+										</div>
+
+									</form>
+								</div>
+								<!-- /.col-lg-6 (nested) -->
+								<div class="col-lg-6">
+									<form role="form">
+										<!-- <div class="form-group">
+											<label>PH</label> <input class="form-control"
+												placeholder="7,0">
+										</div> -->
+										<br />
+
+										<div class="form-group">
+											<p class="text-center">
+												<label class="text-center">Propriedades</label>
+											</p>
+										</div>
+										<hr>
+
+										<div class="form-group">
+											<label>Cor (SRM)</label> <input class="form-control"
+												placeholder="3,00">
+										</div>
+
+										<div class="checkbox">
+											<label> <input type="checkbox" value="">Mostura
+												Recomendada
+											</label>
+										</div>
+										<div class="checkbox">
+											<label> <input type="checkbox" value="">Adicionar
+												Depois da Fervura
+											</label>
+										</div>
+										<div class="checkbox">
+											<label> <input type="checkbox" value="">Não
+												Fermentável
+											</label>
+										</div>
+									</form>
+								</div>
+								<!-- /.col-lg-6 (nested) -->
+							</div>
+
+
+
+
+							<div class="row">
+								<div class="col-lg-6">
+									<form role="form">
+										<!-- <div class="form-group">
+											<label>Nome</label> <input class="form-control"
+												placeholder="Água">
+										</div> -->
+										<br />
+
+										<div class="form-group">
+											<p class="text-center">
+												<label>Rendimento</label>
+											</p>
+										</div>
+										<hr>
+
+										<div class="form-group">
+											<label>Potencial (SG)</label> <input class="form-control"
+												placeholder="1,035">
+										</div>
+										<div class="form-group">
+											<label>Rendimento (%)</label> <input class="form-control"
+												placeholder="75,00">
+										</div>
+										<div class="form-group">
+											<label>Diferença Grão Fino - Grosso (%)</label> <input
+												class="form-control" placeholder="1,50">
+										</div>
+
+									</form>
+								</div>
+								<!-- /.col-lg-6 (nested) -->
+								<div class="col-lg-6">
+									<form role="form">
+										<!-- <div class="form-group">
+											<label>PH</label> <input class="form-control"
+												placeholder="7,0">
+										</div> -->
+										<br />
+
+										<div class="form-group">
+											<p class="text-center">
+												<label class="text-center">Propriedades</label>
+											</p>
+										</div>
+										<hr>
+
+										<div class="form-group">
+											<label>Mistura (%)</label> <input class="form-control"
+												placeholder="4,00">
+										</div>
+
+
+										<div class="form-group">
+											<label>Poder Diastásico (Lintner)</label> <input
+												class="form-control" placeholder="120,00">
+										</div>
+
+										<div class="form-group">
+											<label>Proteína (%)</label> <input class="form-control"
+												placeholder="11,70">
+										</div>
+
+										<div class="form-group">
+											<label>Estrato Lupulado (IBU-gal/lb)</label> <input
+												class="form-control" placeholder="0,00">
+										</div>
+
+
+
+									</form>
+								</div>
+								<!-- /.col-lg-6 (nested) -->
+							</div>
+
+							<form role="form">
+								<div class="form-group">
+									<label>Anotações</label>
+									<textarea class="form-control" rows="3"
+										placeholder="Digite aqui"></textarea>
+								</div>
+
+							</form>
+
+							<button type="submit" class="btn btn-default btn-primary">Ok</button>
+							<button type="reset" class="btn btn-default btn-primary">Cancelar</button>
+
+							<!-- /.col-lg-12 -->
+						</div>
+						<!-- /.row -->
+					</div>
+					<!-- /.container-fluid -->
+				</div>
+
+				<!-- /.row (nested) -->
+			</div>
+			<!-- /.panel-body -->
 		</div>
-		<!-- /#page-wrapper -->
+		<!-- /.panel -->
+	</div>
+	<!-- /.col-lg-12 -->
+	</div>
+	<!-- /.row -->
+	</div>
+	<!-- /#page-wrapper -->
 
 	</div>
 	<!-- /#wrapper -->
