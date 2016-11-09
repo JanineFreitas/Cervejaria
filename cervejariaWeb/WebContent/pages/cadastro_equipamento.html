@@ -271,8 +271,8 @@
 								<li><a href="consulta_receita.html">Receita</a></li>
 								<li><a href="consulta_usuário.html">Usuário</a></li>
 							</ul> <!-- /.nav-second-level --></li>
-						<li><a href="forms.html"><i class="fa fa-bar-chart-o fa-fw"></i>
-								Gráficos</a></li>
+						<li><a href="forms.html"><i
+								class="fa fa-bar-chart-o fa-fw"></i> Gráficos</a></li>
 					</ul>
 				</div>
 				<!-- /.sidebar-collapse -->
@@ -397,7 +397,8 @@
 										</div>
 										<div class="form-group">
 											<label>Calor Esp Tina Mostura</label> <input
-												class="form-control" placeholder="0,30 Cal/gram-deg C" type="number">
+												class="form-control" placeholder="0,30 Cal/gram-deg C"
+												type="number">
 										</div>
 										<div class="form-group">
 											<label>Espaço Perdido Tina Lavagem</label> <input
@@ -446,36 +447,58 @@
 								</div>
 								<!-- /.col-lg-6 (nested) -->
 							</div>
-							<button type="submit" class="btn btn-default btn-primary">Cadastrar</button>
-							<button type="reset" class="btn btn-default btn-primary">Limpar</button>
-							<button type="reset" class="btn btn-default btn-primary">Cancelar</button>
-							<!-- /.row (nested) -->
+							<div class="form-group">
+								<button type="button" class="btn btn-default btn-primary"
+									data-toggle="modal" data-target="#myModal">Cadastrar</button>
+								<button type="reset" class="btn btn-default btn-primary">Limpar</button>
+								<button type="reset" class="btn btn-default btn-primary"
+									href="index.html">Cancelar</button>
+							</div>
+
+							<!-- Modal -->
+							<div class="modal fade" id="myModal" role="dialog">
+								<div class="modal-dialog modal-sm">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Sucesso</h4>
+										</div>
+										<div class="modal-body">
+											<p>Cadastro Realizado com Sucesso.</p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default"
+												data-dismiss="modal">Ok</button>
+										</div>
+									</div>
+								</div>
+
+								<!-- /.row (nested) -->
+							</div>
+							<!-- /.panel-body -->
 						</div>
-						<!-- /.panel-body -->
+						<!-- /.panel -->
 					</div>
-					<!-- /.panel -->
+					<!-- /.col-lg-12 -->
 				</div>
-				<!-- /.col-lg-12 -->
+				<!-- /.row -->
 			</div>
-			<!-- /.row -->
+			<!-- /#page-wrapper -->
+
 		</div>
-		<!-- /#page-wrapper -->
+		<!-- /#wrapper -->
 
-	</div>
-	<!-- /#wrapper -->
+		<!-- jQuery -->
+		<script src="../vendor/jquery/jquery.min.js"></script>
 
-	<!-- jQuery -->
-	<script src="../vendor/jquery/jquery.min.js"></script>
+		<!-- Bootstrap Core JavaScript -->
+		<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
 
-	<!-- Bootstrap Core JavaScript -->
-	<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+		<!-- Metis Menu Plugin JavaScript -->
+		<script src="../vendor/metisMenu/metisMenu.min.js"></script>
 
-	<!-- Metis Menu Plugin JavaScript -->
-	<script src="../vendor/metisMenu/metisMenu.min.js"></script>
-
-	<!-- Custom Theme JavaScript -->
-	<script src="../dist/js/sb-admin-2.js"></script>
-
+		<!-- Custom Theme JavaScript -->
+		<script src="../dist/js/sb-admin-2.js"></script>
 </body>
 
 </html>
