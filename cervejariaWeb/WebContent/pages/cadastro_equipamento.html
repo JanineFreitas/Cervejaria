@@ -452,28 +452,50 @@
 									data-toggle="modal" data-target="#myModal">Cadastrar</button>
 								<button type="reset" class="btn btn-default btn-primary">Limpar</button>
 								<button type="reset" class="btn btn-default btn-primary"
-									href="index.html">Cancelar</button>
-							</div>
+								data-toggle="modal" data-target="#modal">Cancelar</button>
+						</div>
 
-							<!-- Modal -->
-							<div class="modal fade" id="myModal" role="dialog">
-								<div class="modal-dialog modal-sm">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal">&times;</button>
-											<h4 class="modal-title">Sucesso</h4>
-										</div>
-										<div class="modal-body">
-											<p>Cadastro Realizado com Sucesso.</p>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-default"
-												data-dismiss="modal">Ok</button>
-										</div>
+						<!-- Modal -->
+						<div class="modal fade" id="myModal" role="dialog">
+							<div class="modal-dialog modal-sm">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Sucesso</h4>
+									</div>
+									<div class="modal-body">
+										<p>Cadastro Realizado com Sucesso.</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default"
+											data-dismiss="modal">Ok</button>
 									</div>
 								</div>
+							</div>
+						</div>
 
-								<!-- /.row (nested) -->
+						<div class="modal fade" id="modal">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"
+											aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+										<h4 class="modal-title">Cancelar cadastro</h4>
+									</div>
+									<div class="modal-body">
+										<p>Tem certeza que deseja cancelar o cadastro?</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary"
+											data-dismiss="modal">Não</button>
+										<button type="button" class="btn btn-primary"
+											onclick="window.location.href='index.html'">Sim</button>
+									</div>
+								</div>
+							</div>
+						</div>
 							</div>
 							<!-- /.panel-body -->
 						</div>
