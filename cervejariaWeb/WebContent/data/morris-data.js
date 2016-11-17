@@ -55,7 +55,7 @@ $(function() {
         }],
         xkey: 'period',
         ykeys: ['iphone', 'ipad', 'itouch'],
-        labels: ['iPhone', 'iPad', 'iPod Touch'],
+        labels: ['Witbeer', 'IPA', 'APA'],
         pointSize: 2,
         hideHover: 'auto',
         resize: true
