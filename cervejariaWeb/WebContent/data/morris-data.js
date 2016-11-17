@@ -64,13 +64,13 @@ $(function() {
     Morris.Donut({
         element: 'morris-donut-chart',
         data: [{
-            label: "Download Sales",
+            label: "Witbeer",
             value: 12
         }, {
-            label: "In-Store Sales",
+            label: "APA",
             value: 30
         }, {
-            label: "Mail-Order Sales",
+            label: "IPA",
             value: 20
         }],
         resize: true
@@ -109,7 +109,7 @@ $(function() {
         }],
         xkey: 'y',
         ykeys: ['a', 'b'],
-        labels: ['Series A', 'Series B'],
+        labels: ['Faturamento', 'Lucro'],
         hideHover: 'auto',
         resize: true
     });
