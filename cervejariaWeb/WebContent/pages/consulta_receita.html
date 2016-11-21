@@ -9,13 +9,21 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>SoftBeer - Cadastro de Receita</title>
+<title>SoftBeer - Consulta de Receitas</title>
 
 <!-- Bootstrap Core CSS -->
 <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- MetisMenu CSS -->
 <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+<!-- DataTables CSS -->
+<link href="../vendor/datatables-plugins/dataTables.bootstrap.css"
+	rel="stylesheet">
+
+<!-- DataTables Responsive CSS -->
+<link href="../vendor/datatables-responsive/dataTables.responsive.css"
+	rel="stylesheet">
 
 <!-- Custom CSS -->
 <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
@@ -34,6 +42,7 @@
 </head>
 
 <body>
+
 	<div id="wrapper">
 
 		<!-- Navigation -->
@@ -60,8 +69,8 @@
 					<ul class="dropdown-menu dropdown-messages">
 						<li><a href="#">
 								<div>
-									<strong>Leonardo Garcia</strong> <span
-										class="pull-right text-muted"> <em>Sábado</em>
+									<strong>Leonardo Garcia</strong> <span class="pull-right text-muted">
+										<em>Sábado</em>
 									</span>
 								</div>
 								<div>Preparar receita de uma WitBeer para o cliente:
@@ -70,8 +79,8 @@
 						<li class="divider"></li>
 						<li><a href="#">
 								<div>
-									<strong>Wagner Lindemberg</strong> <span
-										class="pull-right text-muted"> <em>Segunda-Feira</em>
+									<strong>Wagner Lindemberg</strong> <span class="pull-right text-muted">
+										<em>Segunda-Feira</em>
 									</span>
 								</div>
 								<div>Preparar receita de uma American IPA para o cliente:
@@ -80,8 +89,8 @@
 						<li class="divider"></li>
 						<li><a href="#">
 								<div>
-									<strong>Janine Freitas</strong> <span
-										class="pull-right text-muted"> <em>Terça-Feira</em>
+									<strong>Janine Freitas</strong> <span class="pull-right text-muted">
+										<em>Terça-Feira</em>
 									</span>
 								</div>
 								<div>Enviar produção das cervejas para o cliente:
@@ -217,10 +226,10 @@
 						<i class="fa fa-caret-down"></i>
 				</a>
 					<ul class="dropdown-menu dropdown-user">
-						<li><a href="perfil_usuario.html"><i
-								class="fa fa-user fa-fw"></i> Perfil de Usuário</a></li>
-						<li><a href="configuracoes.html"><i
-								class="fa fa-gear fa-fw"></i> Configurações</a></li>
+						<li><a href="perfil_usuario.html"><i class="fa fa-user fa-fw"></i> Perfil de
+								Usuário</a></li>
+						<li><a href="configuracoes.html"><i class="fa fa-gear fa-fw"></i> Configurações</a>
+						</li>
 						<li class="divider"></li>
 						<li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>
 								Sair</a></li>
@@ -279,10 +288,9 @@
 		</nav>
 
 		<div id="page-wrapper">
-
 			<div class="row">
 				<div class="col-lg-12">
-					<h1 class="page-header">Cadastro de Receita</h1>
+					<h1 class="page-header">Consulta de Receitas</h1>
 				</div>
 				<!-- /.col-lg-12 -->
 			</div>
@@ -290,188 +298,216 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="panel panel-default">
-						<div class="panel-heading">Adicionar um novo registro de
-							receita</div>
+						<div class="panel-heading">Consulte todas as receitas
+							cadastradas</div>
+						<!-- /.panel-heading -->
 						<div class="panel-body">
-							<div class="row">
-								<div class="col-lg-6">
-									<form role="form">
-										<div class="form-group">
-											<label>Nome</label> <input class="form-control"
-												placeholder="Nome da receita">
-										</div>
-										<br />
-
-										<div class="form-group">
-											<p class="text-center">
-												<label>Pefil Mineiro</label>
-											</p>
-										</div>
-										<hr>
-
-										<div class="form-group">
-											<label>Adjuntos</label> <select class="form-control">
-												<option>Semente de coentro</option>
-												<option>Raspa de limão</option>
-												<option>Raspa de laranja</option>
-											</select>
-										</div>
-										<div class="form-group">
-											<label>Águas</label> <select class="form-control">
-												<option>Água com PH 3,0</option>
-												<option>Água com PH 4,0</option>
-												<option>Água com PH 5,0</option>
-												<option>Água com PH 6,0</option>
-												<option>Água com PH 7,0</option>
-											</select>
-										</div>
-										<div class="form-group">
-											<label>Equipamentos</label> <select class="form-control">
-												<option>Stand de 30 Litros</option>
-												<option>Stand de 40 Litros</option>
-												<option>Stand de 50 Litros</option>
-											</select>
-										</div>
-										<div class="form-group">
-											<label>Estilos</label> <select class="form-control">
-												<option>American Pale Ale</option>
-												<option>Indian Pale Ale</option>
-												<option>Witbeer</option>
-											</select>
-										</div>
-										<div class="form-group">
-											<label>Grãos</label> <select class="form-control">
-												<option>Pilser</option>
-												<option>Trigo</option>
-											</select>
-										</div>
-										<div class="form-group">
-											<label>Lúpulos</label>
-											<div class="checkbox">
-												<label> <input type="checkbox" value="">Citra
-												</label>
-											</div>
-											<div class="checkbox">
-												<label> <input type="checkbox" value="">Cascade
-												</label>
-											</div>
-											<div class="checkbox">
-												<label> <input type="checkbox" value="">Saaz
-												</label>
-											</div>
-										</div>
-
-										<div class="form-group">
-											<label>Anotações</label>
-											<textarea class="form-control" rows="3"></textarea>
-										</div>
-
-									</form>
-								</div>
-								<!-- /.col-lg-6 (nested) -->
-								<div class="col-lg-6">
-									<form role="form">
-										<div class="form-group">
-											<label>Autor</label> <input class="form-control"
-												placeholder="Responsável pela receita">
-										</div>
-										<br />
-
-										<div class="form-group">
-											<p class="text-center">
-												<label class="text-center">Informações
-													complementares</label>
-											</p>
-										</div>
-										<hr>
-
-										<div class="form-group">
-											<label>Data da Brassagem</label> <input class="form-control"
-												placeholder="DD/MM/AAAA">
-										</div>
-										<div class="form-group">
-											<label>Quantidade de Dias de Fermentação</label> <input
-												class="form-control" placeholder="Dias">
-										</div>
-										<div class="form-group">
-											<label>Quantidade de Dias de Maturação</label> <input
-												class="form-control" placeholder="Dias">
-										</div>
-										<div class="form-group">
-											<label>Dia do Envasse</label> <input class="form-control"
-												placeholder="DD/MM/AAAA">
-										</div>
-
-										<label>Custo da Brassagem</label>
-										<div class="form-group input-group">
-											<span class="input-group-addon">R$</span> <input type="text"
-												class="form-control" placeholder="Em reais"> <span
-												class="input-group-addon">.00</span>
-										</div>
-										<div class="form-group">
-											<label>Tamanho da leva</label> <input
-												class="form-control" placeholder="Em litros">
-										</div>
-										<label>Valor de Venda</label>
-										<div class="form-group input-group">
-											<span class="input-group-addon">R$</span> <input type="text"
-												class="form-control" placeholder="Em reais"> <span
-												class="input-group-addon">.00</span>
-										</div>
-									</form>
-								</div>
-								<!-- /.col-lg-6 (nested) -->
-							</div>
-							<div class="form-group">
-								<button type="button" class="btn btn-default btn-primary"
-									data-toggle="modal" data-target="#myModal">Cadastrar</button>
-								<button type="reset" class="btn btn-default btn-primary"
-									onClick="history.go(0)">Limpar</button>
-								<button type="reset" class="btn btn-default btn-primary"
-									data-toggle="modal" data-target="#modal">Cancelar</button>
-							</div>
-
-							<!-- Modal -->
-							<div class="modal fade" id="myModal" role="dialog">
-								<div class="modal-dialog modal-sm">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal">&times;</button>
-											<h4 class="modal-title">Sucesso</h4>
-										</div>
-										<div class="modal-body">
-											<p>Cadastro Realizado com Sucesso.</p>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-default"
-												data-dismiss="modal">Ok</button>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="modal fade" id="modal">
-								<div class="modal-dialog" role="document">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal"
-												aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-											</button>
-											<h4 class="modal-title">Cancelar cadastro</h4>
-										</div>
-										<div class="modal-body">
-											<p>Tem certeza que deseja cancelar o cadastro?</p>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary"
-												data-dismiss="modal">Não</button>
-											<button type="button" class="btn btn-primary"
-												onclick="window.location.href='index.html'">Sim</button>
-										</div>
-									</div>
-								</div>
-							</div>
+							<table width="100%"
+								class="table table-striped table-bordered table-hover"
+								id="dataTables-example">
+								<thead>
+									<tr>
+										<th>Nome</th>
+										<th>PH</th>
+										<th>Cálcio (Ca)</th>
+										<th>Magnésio (Mg)</th>
+										<th>Sódio (Na)</th>
+										<th>Sulfato (SO4)</th>
+										<th>Cloreto (CI)</th>
+										<!--                                         <th>Bicarbonato (HCO3)</th> -->
+										<!--                                         <th>Sulfato de Cálcio (CaSO4)</th> -->
+										<!--                                         <th>Sal de Cozinha (NaCI)</th> -->
+										<!--                                         <th>Sulfato de Magnésio (MgSO4)</th> -->
+										<!--                                         <th>Cloreto de Cálcio (CaCl)</th> -->
+										<!--                                         <th>Bicarbonato de Sódio (NaHCO3)</th> -->
+										<!--                                         <th>Cabornato de Cálcio (HCO3)</th> -->
+										<!--                                         <th>para Volume do Lote (HCO3)</th> -->
+										<th>Anotações</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="odd gradeX">
+										<td>Trident</td>
+										<td>Internet Explorer 4.0</td>
+										<td>Win 95+</td>
+										<td class="center">4</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+									</tr>
+									<tr class="even gradeC">
+										<td>Trident</td>
+										<td>Internet Explorer 5.0</td>
+										<td>Win 95+</td>
+										<td class="center">5</td>
+										<td class="center">C</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+									</tr>
+									<tr class="odd gradeA">
+										<td>Trident</td>
+										<td>Internet Explorer 5.5</td>
+										<td>Win 95+</td>
+										<td class="center">5.5</td>
+										<td class="center">A</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+									</tr>
+									<tr class="even gradeA">
+										<td>Trident</td>
+										<td>Internet Explorer 6</td>
+										<td>Win 98+</td>
+										<td class="center">6</td>
+										<td class="center">A</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+									</tr>
+									<tr class="odd gradeA">
+										<td>Trident</td>
+										<td>Internet Explorer 7</td>
+										<td>Win XP SP2+</td>
+										<td class="center">7</td>
+										<td class="center">A</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+									</tr>
+									<tr class="even gradeA">
+										<td>Trident</td>
+										<td>AOL browser (AOL desktop)</td>
+										<td>Win XP</td>
+										<td class="center">6</td>
+										<td class="center">A</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+									</tr>
+									<tr class="odd gradeX">
+										<td>Trident</td>
+										<td>Internet Explorer 4.0</td>
+										<td>Win 95+</td>
+										<td class="center">4</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+									</tr>
+									<tr class="even gradeC">
+										<td>Trident</td>
+										<td>Internet Explorer 5.0</td>
+										<td>Win 95+</td>
+										<td class="center">5</td>
+										<td class="center">C</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+									</tr>
+									<tr class="odd gradeA">
+										<td>Trident</td>
+										<td>Internet Explorer 5.5</td>
+										<td>Win 95+</td>
+										<td class="center">5.5</td>
+										<td class="center">A</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+									</tr>
+									<tr class="even gradeA">
+										<td>Trident</td>
+										<td>Internet Explorer 6</td>
+										<td>Win 98+</td>
+										<td class="center">6</td>
+										<td class="center">A</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+									</tr>
+									<tr class="odd gradeA">
+										<td>Trident</td>
+										<td>Internet Explorer 7</td>
+										<td>Win XP SP2+</td>
+										<td class="center">7</td>
+										<td class="center">A</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+									</tr>
+									<tr class="even gradeA">
+										<td>Trident</td>
+										<td>AOL browser (AOL desktop)</td>
+										<td>Win XP</td>
+										<td class="center">6</td>
+										<td class="center">A</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+									</tr>
+									<tr class="odd gradeX">
+										<td>Trident</td>
+										<td>Internet Explorer 4.0</td>
+										<td>Win 95+</td>
+										<td class="center">4</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+									</tr>
+									<tr class="even gradeC">
+										<td>Trident</td>
+										<td>Internet Explorer 5.0</td>
+										<td>Win 95+</td>
+										<td class="center">5</td>
+										<td class="center">C</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+									</tr>
+									<tr class="odd gradeA">
+										<td>Trident</td>
+										<td>Internet Explorer 5.5</td>
+										<td>Win 95+</td>
+										<td class="center">5.5</td>
+										<td class="center">A</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+									</tr>
+									<tr class="even gradeA">
+										<td>Trident</td>
+										<td>Internet Explorer 6</td>
+										<td>Win 98+</td>
+										<td class="center">6</td>
+										<td class="center">A</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+									</tr>
+									<tr class="odd gradeA">
+										<td>Trident</td>
+										<td>Internet Explorer 7</td>
+										<td>Win XP SP2+</td>
+										<td class="center">7</td>
+										<td class="center">A</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+									</tr>
+									<tr class="even gradeA">
+										<td>Trident</td>
+										<td>AOL browser (AOL desktop)</td>
+										<td>Win XP</td>
+										<td class="center">6</td>
+										<td class="center">A</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+										<td class="center">X</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 						<!-- /.panel-body -->
 					</div>
@@ -479,9 +515,14 @@
 				</div>
 				<!-- /.col-lg-12 -->
 			</div>
-			<!-- /.row -->
 		</div>
-		<!-- /#page-wrapper -->
+		<!-- /.panel -->
+	</div>
+	<!-- /.col-lg-6 -->
+	</div>
+	<!-- /.row -->
+	</div>
+	<!-- /#page-wrapper -->
 
 	</div>
 	<!-- /#wrapper -->
@@ -495,8 +536,23 @@
 	<!-- Metis Menu Plugin JavaScript -->
 	<script src="../vendor/metisMenu/metisMenu.min.js"></script>
 
+	<!-- DataTables JavaScript -->
+	<script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+	<script src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+	<script src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
+
 	<!-- Custom Theme JavaScript -->
 	<script src="../dist/js/sb-admin-2.js"></script>
+
+	<!-- Page-Level Demo Scripts - Tables - Use for reference -->
+	<script>
+		$(document).ready(function() {
+			$('#dataTables-example').DataTable({
+				responsive : true
+			});
+		});
+	</script>
+
 </body>
 
 </html>
